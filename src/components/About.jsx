@@ -1,78 +1,76 @@
+import Lottie from "lottie-react";
+import codingAnimation from "../assets/coding.json";
+
 function About() {
   return (
-    <>
-      <p className="about">// About Me</p>
-      <section className="middle-part">
-        <div className="center-section">
-          <div className="mid-section">
-            <div className="impressions">
-              <div className="column">
-                <h1>3+</h1>
-                <p>Months</p>
-              </div>
-              <div className="column">
-                <p>Industry</p>
-                <p>Experience</p>
-              </div>
-            </div>
-            <div className="impressions">
-              <div className="column">
-                <h1>1+</h1>
-                <p>Years</p>
-              </div>
-              <div className="column">
-                <p>Coding</p>
-                <p>Experience</p>
-              </div>
-            </div>
-            <div className="impressions">
-              <div className="column">
-                <h1>1+</h1>
-              </div>
-              <div className="column">
-                <p>Projects</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="box">
-            <div className="descp">
-              <p className="name-detail">Raksha Sinha</p>
-              <p className="student">Student</p>
-              <div className="college-details">
-                <p className="college">@ K.R. Mangalam University
-                <p className="college">Gurugram, Haryana</p>
-                <p className="branch">B.Tech CSE (AI & ML)</p>
-                <p className="grad-year">Graduation: 2027</p>
-                <p className="cgpa">CGPA: 7.86</p> 
-              </p>
-              </div>
-            </div>
-
-            <div>
-              <div className="text-container">
-                <p className="text">
-                  I turn concepts into code and algorithms into experiences — building sleek interfaces and smart systems at the intersection of web and AI.
-                </p>
-              </div>
-
-              <div className="focus">
-                <div className="focus-box">
-                  <div className="focus-text">
-                    <i className="fa-solid fa-circle twinkle-icon"></i>
-                    <p>Current Focus</p>
-                  </div>
-                  <p className="focus-small">
-                    Building interactive full-stack projects infused with AI, combining clean design with purposeful functionality.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section className="about-section">
+      
+      <div className="about-container">
+        <div className="about-content">
+          <h1 className="about-title">// About Me</h1>
+          Hey there, I’m Raksha Sinha — a Computer Science undergrad exploring AI & ML while building smart, dynamic web apps. <br></br>
+          <br></br>
+          Over the past year, I’ve honed my frontend and backend skills, and now I’m blending them with AI to create projects that truly wow. <br></br>
+          <br></br>
+          Most days, I’m deep in code with my go-to fuel: chai + music ☕🎧. I learn best by building—curiosity always pulls me under the hood.<br></br>
+          <br></br>
+          When I’m not in dev mode, I’m reading, experimenting in the kitchen, or chasing ideas that keep life fun and balanced. <br></br>
         </div>
-      </section>
-    </>
+
+        {/* Right side animation */}
+        <div className="about-animation">
+          <Lottie animationData={codingAnimation} loop={true} className="animation-lottie" />
+        </div>
+      </div>
+    </section>
   );
 }
 
 export default About;
+
+
+// import Lottie from "lottie-react";
+// import { motion } from "framer-motion";
+// import codingAnimation from "../assets/coding.json";
+
+// function About() {
+//   return (
+//     <section className="about-section">
+//       <div className="about-container">
+        
+//         {/* Left side content */}
+//         <div className="about-content">
+//           <h1 className="about-title">// About Me</h1>
+          
+//           {/* New wrapper for text with animation */}
+//           <motion.div
+//             className="about-text"
+//             initial={{ opacity: 0, y: 40 }}
+//             whileInView={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 1.2, ease: "easeOut" }}
+//             viewport={{ once: false, amount: 0.3 }}
+//           >
+//             Hey there, I’m Raksha Sinha — a Computer Science undergrad exploring AI & ML while building smart, dynamic web apps. <br /><br />
+            
+//             Over the past year, I’ve honed my frontend and backend skills, and now I’m blending them with AI to create projects that truly wow. <br /><br />
+            
+//             Most days, I’m deep in code with my go-to fuel: chai + music ☕🎧. I learn best by building—curiosity always pulls me under the hood. <br /><br />
+            
+//             When I’m not in dev mode, I’m reading, experimenting in the kitchen, or chasing ideas that keep life fun and balanced. <br /><br />
+//           </motion.div>
+//         </div>
+
+//         {/* Right side animation */}
+//         <div className="about-animation">
+//           <Lottie 
+//             animationData={codingAnimation} 
+//             loop={true} 
+//             className="animation-lottie" 
+//           />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default About;

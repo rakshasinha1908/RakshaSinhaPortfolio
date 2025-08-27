@@ -5,33 +5,34 @@ function Experience() {
   const experiences = [
     {
       id: 1,
-      date: "2025 – Present",
-      role: "AI Data Agent Intern",
-      company: "Worksphere AI",
-      points: [
-        "Built a conversational SQL agent with React + Node.js.",
-        "Integrated MySQL backend for business queries.",
-        "Optimized prompts and APIs for faster response time."
-      ],
-      stack: "React, Node.js, MySQL, OpenAI API"
-    },
-    {
-      id: 2,
       date: "June 2025 – August 2025",
       role: "Quant Research Intern",
       company: "CITeSERT",
       points: [
-        "Analyzed NSE stock movement data with pandas/NumPy.",
-        "Built pipelines for intraday move clustering.",
-        "Generated research-ready CSVs mapping reasons to returns."
+        "Analyzed 50,000+ rows of NSE stock movement data using Python (pandas/NumPy), extracting intraday trends and anomalies.",
+        "Automated data collection & preprocessing scripts, reducing manual effort by ~40% and ensuring reproducible research pipelines.",
+        "Designed clustering pipelines to group intraday stock moves, enabling pattern recognition across 200+ NSE symbols.",
+        "Integrated LLMs (Perplexity, Gemini, Claude) for automating research tasks such as summarizing market drivers and mapping textual reasons to stock returns.",
+        "Generated research-ready CSV datasets that linked qualitative factors with quantitative outcomes, improving downstream model usability."
       ],
-      stack: "Python, Pandas, NumPy, Scikit-learn"
+      stack: "Python, Pandas, NumPy, Scikit-learn, LLM APIs (Perplexity, Gemini, Claude)"
+    },
+    {
+      id: 2,
+      date: "June 2025 – August 2025",
+      role: "AI/ML Intern – LLM Deployment",
+      company: "Prodigal AI",
+      points: [
+        "Researched and implemented Transformer-based architectures (BERT, GPT) and Retrieval-Augmented Generation (RAG), improving factual accuracy and reducing hallucination rates by ~25% in prototype tests.",
+        "Integrated HuggingFace inference APIs into deployment workflows, enabling real-time response generation with latency reduced by ~30% via caching and optimization strategies.",
+        "Designed and tested retrieval pipelines using FAISS & Pinecone vector databases, achieving efficient similarity search across 10,000+ embeddings."
+      ],
+      stack: "Python, PyTorch, HuggingFace Transformers, FAISS, Pinecone, Git"
     }
   ];
 
   const timelineRef = useRef(null);
 
-  // Scroll line animation
   React.useEffect(() => {
     const handleScroll = () => {
       if (!timelineRef.current) return;
@@ -67,7 +68,7 @@ function Experience() {
             transition={{
               duration: 0.6,
               ease: "easeOut",
-              delay: index * 0.1,
+              delay: index * 0.2,
             }}
             viewport={{ once: false, amount: 0.2 }}
           >

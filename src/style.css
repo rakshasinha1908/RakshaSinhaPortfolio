@@ -109,8 +109,8 @@ body{
 .typing-text {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid;
-  animation: typing 3s steps(30), blink .5s step-end infinite alternate;
+  border-right: 3px solid #a16ae8;
+  animation: typing 3s steps(30), blink 0.7s step-end infinite alternate;
   color: white;
   font-size: 30px;
   font-weight: 600;
@@ -129,7 +129,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2rem auto;
+    margin-left: 100px;
     padding: 1rem;
     width: 1100px;
     height: 78vh; 
@@ -182,6 +182,8 @@ body{
 
 .image-container {
   height: 450px;
+  position: relative;
+  z-index: 1;
 }
 
 .image-container {
@@ -253,6 +255,8 @@ a {
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .button:hover{
@@ -299,236 +303,63 @@ a {
     border-color: #75b4b1;
 }
 
-.mid-section{
-    display: flex;
-    justify-content: space-around;
-}
-
-.mid-section {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.impressions {
-  height: 80px;
-  width: 200px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 12px;
-  color: white;
-  background: linear-gradient(to right, rgb(59, 59, 59), rgb(0, 0, 0));
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-}
-
-.column p {
-  font-size: 1rem;
-  color: white;
-}
-
-
-.middle-part{
-    height: 530px;
-    display: flex;
-    justify-content: center;
-}
-
-.center-section{
-    padding-top: 2rem;
-    width: 1100px;
-    margin-top: 5px;
-    height: 600px;
-}
-
-.box{
-    display: flex;
-    width: 100%;
-}
-.descp{
-    margin-top: 80px;
-    height: 320px;
-    width: 400px;
-    background: radial-gradient(circle at top left, rgba(120, 82, 255, 0.2), rgba(33, 33, 33, 0.9));
-    border-radius: 20px;
-    color: white;
-    position: relative;
-    z-index: 1;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    border: 1px solid rgba(165, 94, 234, 0.5);
-    box-shadow:
-    0 0 15px rgba(165, 94, 234, 0.3),
-    0 0 30px rgba(165, 94, 234, 0.2);
-}
-
-.descp::before {
-  content: '';
-  position: absolute;
-  top: -20%;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-  filter: blur(60px);
-  z-index: -1;
-  opacity: 0.4;
-}
-
-.name-detail{
-    text-align: center;
-    font-size: 46px;
-    font-weight: 600;
-    margin-top: 10px;
-    background: linear-gradient(to right, #A16AE8, #FFB6A5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.student{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 26px;
-    margin-bottom: 30px;
-    font-weight: 500;
-    color: #f7c5ba;
-}
-
-.college-details{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.college{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    font-size: 15px;
-    color: #f3b8db;
-}
-
-.branch,
-.grad-year,
-.cgpa {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 4px;
-  color: #dcc7f0;        
-  font-weight: 400;  
-} 
-
-
 .quote{
-    margin-top: 110px;
-    font-weight: 300;
-    margin-left: 22px;
+  margin-top: 90px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  color: #ddd;
+  position: relative;
 }
 
-.about{
-    width: 100%;
-    font-size: 70px;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-    background: linear-gradient(90deg, #00ff99, #00ccff, #ff00cc);
-    -webkit-background-clip: text;   
-    -webkit-text-fill-color: transparent;
-    background-clip: text;           
-    color: transparent;
-    font-family: 'Domine', serif;
+.about-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
 }
 
-.text{
-    height: 85px;
-    width: 485px;
-    display: flex;
-    align-items: center;
-
+.about-content{
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 500px;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  color: #c9c9c9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.text-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 6px;
-    height: 100%;
-    background: #544385;
-    border-radius: 10px;
+.about-title{
+  font-size: 70px;
+  font-weight: 700;
+  font-family: 'Domine', serif;        
+  background: linear-gradient(160deg, #00c9ff, #92fe9d);
+  -webkit-background-clip: text;   
+  -webkit-text-fill-color: transparent;
+  background-clip: text;           
+  color: transparent;
+  margin-bottom: 16px;
 }
 
-.text-container{
-    position: relative;
-    padding-left: 20px;
-    font-size: 18px;
-    color: #fff;
-    width: 500px;
-    margin-left: 70px;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    height: 85px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-animation {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.focus{
-    width: 600px;
-    margin-left: 70px;
-    height: 130px;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(107, 50, 163, 0.5);
-    border-radius: 8px;
-    background-color: #2e2e2e;
-}
-
-.focus-text{
-    display: flex;
-    width: 150px;
-    justify-content: space-around;
-    font-size: 18px;
-    margin-left: 8px;
-}
-
-.twinkle-icon{
-    font-size: 12px;
-    margin-top: 6px;
-    margin-right: 10px;
-    color: rgba(202, 149, 255, 0.9);
-    animation: twinkle 2s infinite ease-in-out;
-}
-
-@keyframes twinkle {
-  0%, 100% {
-    opacity: 1;
-    text-shadow: 0 0 4px rgba(225, 197, 253, 0.7);
-  }
-  50% {
-    opacity: 0.4;
-    text-shadow: 0 0 8px rgba(225, 197, 253, 1);
-  }
-}
-
-.focus-small{
-    margin-left: 10px;
-    margin-top: 10px;
-    line-height: 30px;
-}
+.animation-lottie{
+  width: 500px !important;
+  height: 500px !important;
+} 
 
 
 .skills-title {
   width: 100%;
   font-size: 100px;
-  margin-top: 100px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   font-weight: 700;
@@ -541,10 +372,9 @@ a {
 }
 
 .skills-section {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
-  min-height: 700px;
+  min-height: 670px;
 }
 
 .skills-container {
@@ -596,7 +426,8 @@ a {
 }
 
 .skill-item {
-  width: 120px;
+  width: 150px;
+  height: 140px;
   margin: 15px;
   padding: 15px;
   border-radius: 12px;
@@ -605,6 +436,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -615,7 +447,7 @@ a {
 }
 
 .icon, .custom-icon {
-  font-size: 45px;
+  font-size: 48px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -627,14 +459,14 @@ a {
 
 .skill-name {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
   color: #ccc;
 }
 
 
 .custom-icon {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   margin-bottom: 10px;
 }
@@ -669,7 +501,7 @@ a {
 
 .experience-section {
   color: #fff;
-  height: 750px;
+  margin-top: 0px;
 }
 .timeline {
   position: relative;
@@ -758,3 +590,165 @@ a {
   color: #aaa;
   margin-top: 8px;
 }
+
+.projects-section {
+  padding: 6rem 2rem;
+}
+
+.projects-title {
+  font-size: 4.7rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #a0c4ff, #3c4a6b);
+  -webkit-background-clip: text;   
+  -webkit-text-fill-color: transparent;
+  background-clip: text;           
+  color: transparent;
+  font-family: 'Domine', serif;
+}
+
+.project-card-section{
+  padding-top: 40px;
+}
+
+.project-card {
+  border: 1px solid #9c55c0b0;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  color: #e5e5e5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 450px;
+  height: 430px;
+  margin: auto;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 30px rgba(156, 85, 192, 0.4);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(156, 85, 192, 0.3);
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ae75ca;
+  margin-bottom: 0.2rem;
+}
+
+.project-description {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.project-tech {
+  margin-bottom: 0.4rem;
+}
+
+.tech-badge {
+  background: transparent;
+  border: 1px solid #9c55c0;
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin: 6px;
+  margin-left: 0px;
+  font-size: 0.7rem;
+  transition: 0.3s;
+  color: #e5d2ee;
+  display: inline-block;
+  background-color: #9c55c02f;
+}
+
+.tech-badge:hover {
+  background: #9c55c0;
+  color: black;
+  font-weight: 600;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.github-btn,
+.demo-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: 1px solid;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.github-btn {
+  border-color: #9c55c0;
+  color: #9c55c0;
+  background-color: #9c55c00c;
+}
+
+.github-btn:hover {
+  background: #9c55c0;
+  color: #000;
+}
+
+.demo-btn {
+  border-color: #c5878c;
+  color: #c5878c;
+  background-color: #c5878c18;
+}
+
+.demo-btn:hover {
+  background: #c5878c;
+  color: #000;
+}
+
+.swiper-pagination-bullet {
+  background: #9c55c0 !important;
+  opacity: 0.4;
+}
+
+.swiper-pagination {
+  position: relative !important;  
+  margin-top: 2rem;             
+  text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  transform: scale(1.3);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f1e3f7 !important;
+  background: rgba(0, 0, 0, 0.4);
+  border: 0.14rem solid #ebd8f7;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important; 
+  font-weight: 700 !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #9c55c0;
+  color: #000 !important;
+}
+
