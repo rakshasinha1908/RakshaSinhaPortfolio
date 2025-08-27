@@ -1,0 +1,50 @@
+<p className="stack">I work across the stack using:</p>
+              <p className="stack">~ Frontend: React.js, TailwindCSS, JavaScript</p>
+              <p className="stack">~ Backend: Node.js, Flask</p>
+              <p className="stack">~ Databases: MySQL</p>
+              <p className="stack">~ Other: Python, Pandas, NumPy, Scikit-learn, Git, REST API
+
+
+// import { useState } from 'react';
+
+// const skillsData = {
+//   Frontend: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS'],
+//   Backend: ['Node.js', 'Flask', 'Express.js'],
+//   Databases: ['MySQL', 'MongoDB'],
+//   Tools: ['Git', 'GitHub', 'Postman', 'VS Code'],
+//   AI_ML: ['Python', 'Pandas', 'NumPy', 'Scikit-learn'],
+// };
+
+// const categories = Object.keys(skillsData);
+
+// function Skills() { 
+//   const [activeTab, setActiveTab] = useState('Frontend');
+
+   return (
+     <section className="skills-section">
+       <h1 className="skills-title">CORE SKILLS</h1>
+       <div className="tabs"> 
+         {categories.map((category) => (
+           <button
+             key={category}
+             className={`tab-button ${activeTab === category ? 'active' : ''}`}
+             onClick={() => setActiveTab(category)}
+           >
+             {category.replace('_', '/')}
+           </button>
+         ))}
+       </div>
+
+       <div className="skills-grid">
+         {skillsData[activeTab].map((skill, index) => (
+           <div className="skill-item" key={index}>
+             <span className="skill-index">{String(index + 1).padStart(2, '0')}</span>
+             <span className="skill-name">{skill}</span>
+           </div>
+         ))}
+       </div>
+     </section>
+   );
+}
+
+// export default Skills;
