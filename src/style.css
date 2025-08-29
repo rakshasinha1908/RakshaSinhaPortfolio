@@ -18,6 +18,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.hero-section{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
 .top-section{     
   margin: 0 auto;
   padding: 0 20px;
@@ -34,12 +41,7 @@ body{
   backdrop-filter: blur(6px);      
 }
 
-.hero-section{
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
+
 .navbar {
     height: 50px;
     width: 85%; 
@@ -79,7 +81,6 @@ body{
 
 .bot {
     color: white;
-    font-size: 1.1rem;
     padding: 8px 16px;
     display: flex;
     align-items: center;
@@ -88,7 +89,7 @@ body{
 }
 
 .logo{
-  color: white;
+    color: white;
     font-size: 1.1rem;
     padding: 8px 16px;
     display: flex;
@@ -598,8 +599,8 @@ a {
 .projects-title {
   font-size: 4.7rem;
   font-weight: 700;
+  margin-bottom: 0.5rem;
   text-align: center;
-  margin-bottom: 1rem;
   background: linear-gradient(to right, #a0c4ff, #3c4a6b);
   -webkit-background-clip: text;   
   -webkit-text-fill-color: transparent;
@@ -619,7 +620,7 @@ a {
   text-align: left;
   color: #e5e5e5;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 450px;
+  width: 420px;
   height: 430px;
   margin: auto;
 }
@@ -751,4 +752,283 @@ a {
   background: #9c55c0;
   color: #000 !important;
 }
+
+.contact-section {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  max-width: 470px;
+  width: 100%;
+}
+
+.contact-box {
+  background: #030412;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.contact-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-box p {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1d1e2a;
+  color: white;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #9c55c0;
+  box-shadow: 0 0 6px rgba(156, 85, 192, 0.6);
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #9c55c0;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-btn:hover {
+  background: #7b3ca0;
+  transform: scale(1.05);
+}
+
+.contact-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-btn .icon {
+  font-size: 1.1rem;
+}
+
+.footer-section {
+  position: relative;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 20px;
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+.socials-footer{
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+}
+
+.footer-icons {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-icons:hover {
+  color: #aaa;
+}
+
+.rhea-floating-bubble {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background: linear-gradient(135deg, #4281c9, #6aa6f5);
+  color: white;
+  padding: 14px 18px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  animation: floaty 3s ease-in-out infinite;
+  overflow: visible;
+}
+
+.rhea-avatar {
+  position: absolute; 
+  top: -26px;          
+  right: -14px;  
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+@keyframes floaty {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.rhea-chatbox {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  width: 320px;
+  height: 400px;
+  background: rgba(25, 25, 35, 0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.rhea-header {
+  background: rgba(74, 144, 226, 0.9);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rhea-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.rhea-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.msg.user {
+  background: rgba(74, 144, 226, 0.8);
+  color: white;
+  align-self: flex-end;
+}
+
+.msg.rhea {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ddd;
+  align-self: flex-start;
+}
+
+.rhea-input {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rhea-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.rhea-input button {
+  margin-left: 8px;
+  border: none;
+  background: rgba(74, 144, 226, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 

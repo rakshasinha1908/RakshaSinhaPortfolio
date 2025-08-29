@@ -6,7 +6,7 @@ function Experience() {
     {
       id: 1,
       date: "June 2025 – August 2025",
-      role: "Quant Research Intern",
+      role: "AI Quant Research Intern",
       company: "CITeSERT",
       points: [
         "Analyzed 50,000+ rows of NSE stock movement data using Python (pandas/NumPy), extracting intraday trends and anomalies.",

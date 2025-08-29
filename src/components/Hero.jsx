@@ -1,10 +1,7 @@
-
-
 import { motion } from "framer-motion";
 import profile from "../assets/photo.jpg";
 
-function Hero() {
-  // Animation variants
+function Hero({id}) {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -19,7 +16,7 @@ function Hero() {
   };
 
   return (
-    <section>
+    <section id={id}>
       <div className="details">
         <motion.div
           className="info-container"
@@ -40,7 +37,7 @@ function Hero() {
             <br />
             <div className="download">
               <motion.a
-                href="/Raksha_Sinha_Resume.pdf"
+                href="/RakshaSinhaResume.pdf"
                 download
                 className="resume button"
                 whileHover={{ scale: 1.05 }}
@@ -52,9 +49,7 @@ function Hero() {
 
               <motion.a
                 className="contact button"
-                href="https://wa.me/918700475361"
-                target="_blank"
-                rel="noreferrer"
+                href="mailto:rakshasinha1908@gmail.com" 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -112,7 +107,7 @@ function Hero() {
         >
           <motion.div
             className="image"
-            animate={{ y: [0, -5, 0] }}
+            animate={{ y: [0, -2, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
           >
             <img src={profile} className="fit-image" alt="Raksha" />

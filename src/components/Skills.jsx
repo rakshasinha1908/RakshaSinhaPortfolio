@@ -59,7 +59,6 @@ function Skills() {
       <div className="skills-container">
         <h1 className="skills-title">Core Skills</h1>
 
-        {/* Tabs */}
         <div className="tabs">
           {categories.map((category) => (
             <button
