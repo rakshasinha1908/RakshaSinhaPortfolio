@@ -37,30 +37,26 @@ Follow these steps to run the project locally:
 ````
 
 2. **Install dependencies**
-
    ```bash
    npm install
-   ```
+```
 
 3. **Run in development mode**
-
    ```bash
    npm run dev
-   ```
+```
 
    Open at `http://localhost:5173`.
 
 4. **Build for production**
-
    ```bash
    npm run build
-   ```
+```
 
 5. **Preview production build**
-
    ```bash
    npm run serve
-   ```
+```
 
 ---
 
@@ -74,4 +70,3 @@ If you’d like to connect:
 
 ⭐ If you like this project, consider giving it a **star** on GitHub!
 
-```
