@@ -1,5 +1,4 @@
-
-````markdown
+````
 # 🌸 Raksha Sinha | Portfolio
 
 A personal **portfolio website** built with **React + Vite**, showcasing my projects, skills, and experiences in a clean and modern design.  
@@ -75,6 +74,3 @@ If you’d like to connect:
 ⭐ If you like this project, consider giving it a **star** on GitHub!
 
 ```
-
----
-
