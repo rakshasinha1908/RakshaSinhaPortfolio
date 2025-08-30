@@ -470,6 +470,28 @@ a {
   }
 }
 
+@media (max-width:385px) {
+  .details {
+    padding: 0;
+    width: 90vw;
+  }
+
+  .typing-text {
+    font-size: 1rem;
+  }
+
+  .name {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 4rem;
+  }
+  .hi{
+    margin-left: 1.125rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width:360px) {
   .details {
     padding: 0;
