@@ -470,14 +470,14 @@ a {
   }
 }
 
-@media (max-width:385px) {
+@media (max-width:360px) {
   .details {
     padding: 0;
     width: 90vw;
   }
 
   .typing-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .name {
@@ -677,7 +677,35 @@ a {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+}
 
+@media (max-width:360px) {
+.about-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.about-content{
+  padding: 2rem;
+  margin-top: 1.875rem;
+  width: 100%;
+  font-size: 0.7rem;
+}
+
+.about-title{
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-animation {
+  width: 25rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 .skills-title {
