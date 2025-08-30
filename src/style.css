@@ -470,7 +470,7 @@ a {
   }
 }
 
-@media (max-width:380px) {
+@media (max-width:385px) {
   .details {
     padding: 0;
     width: 90vw;
