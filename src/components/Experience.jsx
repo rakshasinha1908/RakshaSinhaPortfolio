@@ -55,7 +55,8 @@ function Experience() {
   }, []);
 
   return (
-    <section className="experience-section">
+    <section className="outer-exp">
+      <section className="experience-section">
       <h1 className="experience-title">Experience</h1>
 
       <div className="timeline" ref={timelineRef}>
@@ -98,6 +99,7 @@ function Experience() {
           </motion.div>
         ))}
       </div>
+    </section>
     </section>
   );
 }
