@@ -203,7 +203,7 @@ body{
     font-weight: 600;
     max-width: 43.75rem;
     color: #fdfdfd;
-    background: linear-gradient(90deg, #A16AE8, #F4B9B8);
+    background: rgb(208, 167, 235);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Domine', serif;
@@ -470,6 +470,28 @@ a {
   }
 }
 
+@media (max-width:380px) {
+  .details {
+    padding: 0;
+    width: 90vw;
+  }
+
+  .typing-text {
+    font-size: 1.25rem;
+  }
+
+  .name {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 3.635rem;
+  }
+  .hi{
+    margin-left: 1.125rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}
+
 .about-container{
   display: flex;
   align-items: center;
@@ -491,7 +513,7 @@ a {
   font-size: 4.5rem;
   font-weight: 700;
   font-family: 'Domine', serif;        
-  background: linear-gradient(160deg, #00c9ff, #92fe9d);
+  background: #00c9ff;
   -webkit-background-clip: text;   
   -webkit-text-fill-color: transparent;
   background-clip: text;           
@@ -636,6 +658,28 @@ a {
 }
 }
 
+@media (max-width: 635px){
+  .about-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.about-content{
+  padding: 2rem;
+  margin-top: 1.875rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.about-title{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+}
+
 .skills-title {
   width: 100%;
   font-size: 100px;
@@ -643,7 +687,7 @@ a {
   display: flex;
   justify-content: center;
   font-weight: 700;
-  background: linear-gradient(150deg, #00f5ff, #6a5cff, #b624ff);
+  background: #00f5ff;
   -webkit-background-clip: text;   
   -webkit-text-fill-color: transparent;
   background-clip: text;           
@@ -864,7 +908,7 @@ a {
   width: 100%;
   font-size: 60px;
   font-weight: 700;
-  background: linear-gradient(150deg, #00f5ff, #6a5cff, #b624ff);
+  background: #dea9f8;
   -webkit-background-clip: text;   
   -webkit-text-fill-color: transparent;
   background-clip: text;           
@@ -989,7 +1033,7 @@ a {
   font-weight: 700;
   margin-bottom: 0.5rem;
   text-align: center;
-  background: linear-gradient(to right, #a0c4ff, #3c4a6b);
+  background: #a0c4ff;
   -webkit-background-clip: text;   
   -webkit-text-fill-color: transparent;
   background-clip: text;           
@@ -1085,6 +1129,52 @@ a {
   .swiper-button-prev {
     display: none;
   }
+}
+
+@media (max-width:480px) {
+  .project-card {
+  border: 1px solid #9c55c0b0;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  color: #e5e5e5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 19rem;
+  height: 24rem;
+  margin: auto;
+}
+
+.project-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ae75ca;
+  margin-bottom: 0.2rem;
+}
+
+.project-description {
+  font-size: 0.65rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.project-tech {
+  margin-bottom: 0.4rem;
+}
+
+.tech-badge {
+  background: transparent;
+  border: 1px solid #9c55c0;
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin: 6px;
+  margin-left: 0px;
+  font-size: 0.6rem;
+  transition: 0.3s;
+  color: #e5d2ee;
+  display: inline-block;
+  background-color: #9c55c02f;
+}
 }
 
 .github-btn {
@@ -1299,7 +1389,7 @@ a {
   position: fixed;
   bottom: 40px;
   right: 20px;
-  background: linear-gradient(135deg, #4281c9, #6aa6f5);
+  background: #6aa6f5;
   color: white;
   padding: 14px 18px;
   border-radius: 20px;
@@ -1384,7 +1474,7 @@ a {
 }
 
 .msg.user {
-  background: rgba(74, 144, 226, 0.8);
+  background: rgba(87, 157, 238, 0.8);
   color: white;
   align-self: flex-end;
 }
@@ -1414,7 +1504,7 @@ a {
 .rhea-input button {
   margin-left: 8px;
   border: none;
-  background: rgba(74, 144, 226, 0.9);
+  background: rgba(81, 152, 233, 0.9);
   color: white;
   padding: 8px 12px;
   border-radius: 6px;

@@ -1,12 +1,80 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+````markdown
+# 🌸 Raksha Sinha | Portfolio
 
-Currently, two official plugins are available:
+A personal **portfolio website** built with **React + Vite**, showcasing my projects, skills, and experiences in a clean and modern design.  
+Deployed live here: [🔗 View Portfolio](https://raksha-sinha-portfolio-f5sb.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design for all devices 📱💻  
+- Smooth animations & interactive UI ⚡  
+- Project showcase with descriptions & links 🖼️  
+- Contact section with working form 📬  
+- Optimized build with **Vite** 🚀  
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** (with minor TypeScript)  
+- **Vite** for blazing-fast builds  
+- **Custom CSS** for styling  
+- **Swiper.js** for sliders & interactivity  
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/rakshasinha1908/RakshaSinhaPortfolio
+   cd RakshaSinhaPortfolio
+````
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run in development mode**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open at `http://localhost:5173`.
+
+4. **Build for production**
+
+   ```bash
+   npm run build
+   ```
+
+5. **Preview production build**
+
+   ```bash
+   npm run serve
+   ```
+
+---
+
+## 📬 Contact
+
+If you’d like to connect:
+**Portfolio:** [rakshasinha1908.github.io/RakshaSinhaPortfolio](https://raksha-sinha-portfolio-f5sb.vercel.app/)
+**GitHub:** [@rakshasinha1908](https://github.com/rakshasinha1908)
+
+---
+
+⭐ If you like this project, consider giving it a **star** on GitHub!
+
+```
+
+---
+
