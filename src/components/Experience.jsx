@@ -7,7 +7,7 @@ function Experience() {
       id: 1,
       date: "June 2025 – August 2025",
       role: "AI Quant Research Intern",
-      company: "CITeSERT",
+      company: "Citesert",
       points: [
         "Analyzed 50,000+ rows of NSE stock movement data using Python (pandas/NumPy), extracting intraday trends and anomalies.",
         "Automated data collection & preprocessing scripts, reducing manual effort by ~40% and ensuring reproducible research pipelines.",
@@ -19,7 +19,7 @@ function Experience() {
     },
     {
       id: 2,
-      date: "June 2025 – August 2025",
+      date: "June 2025 – Present",
       role: "AI/ML Intern – LLM Deployment",
       company: "Prodigal AI",
       points: [
