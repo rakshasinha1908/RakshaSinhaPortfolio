@@ -19,7 +19,7 @@ function Experience() {
     },
     {
       id: 2,
-      date: "June 2025 – Present",
+      date: "June 2025 – December 2025",
       role: "AI/ML Intern – LLM Deployment",
       company: "Prodigal AI",
       points: [

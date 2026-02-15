@@ -13,10 +13,12 @@ import viteLogo from "../assets/logos/vite.png";
 import pythonLogo from "../assets/logos/python.png";
 import javaLogo from "../assets/logos/java.png";
 import framermotionLogo from "../assets/logos/framer-motion.svg"
+import tailwindLogo from "../assets/logos/tailwind.png"
 
 const skillsData = {
   Frontend: [
     { name: "React", icon: <FaReact className="icon react"/> },
+    { name: "TailwindCSS", icon: <img src={tailwindLogo} alt="Tailwind" className="custom-icon" />},
     { name: "JavaScript", icon: <SiJavascript className="icon js"/> },
     { name: "HTML5", icon: <SiHtml5 className="icon html"/> },
     { name: "CSS3", icon: <SiCss3 className="icon css"/> },

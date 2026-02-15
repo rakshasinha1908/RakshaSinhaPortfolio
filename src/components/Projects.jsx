@@ -8,6 +8,16 @@ import ProjectCard from "./ProjectCard";
 
 const projectsData = [
   {
+    title: "TrackWise",
+    description: "An ONGOING full-stack expense and budget tracker built with React, Tailwind, and Flask to manage transactions and monthly spending.",
+    image: "/trackwise.png",
+    tech: ["React", "Tailwind CSS", "Flask", "Python", "SQLite", "REST APIs"],
+    links: {
+      github: "https://github.com/rakshasinha1908/TrackWise",
+      demo: "#"
+    }
+  },
+  {
     title: "QuickJot",
     description: "QuickJot is a fast and minimal note-taking app where users can create, edit, search, and star notes with theme toggle and local storage support.",
     image: "/quickJot.png",
