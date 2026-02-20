@@ -36,11 +36,11 @@ function RheaAssistant() {
     stack: "Her tech stack includes React, Vite, Node.js basics, Java, Python, and SQL.",
     tools: "She often works with Git, GitHub, Vite, VS Code, and Figma",
     technologies: "She often works with Git, GitHub, Vite, VS Code, and Figma",
-    experience: "Raksha has interned as an AI Quant Research Intern at CITeSERT (worked on stock data analysis, clustering, and LLM automation) and as an AI/ML Intern at Prodigal AI (focused on LLM deployment, RAG pipelines, and vector DBs).",
+    experience: "Raksha has interned as an AI Quant Research Intern at CiteSert (worked on stock data analysis, clustering, and LLM automation) and as an AI/ML Intern at Prodigal AI (focused on LLM deployment, RAG pipelines, and vector DBs).",
     education: "Raksha completed her schooling at Vishwa Bharati Public School, Dwarka, and is currently pursuing a Bachelor's degree in Computer Science at K.R. Mangalam University, Gurugram.",
     certifications: "Raksha has completed certifications in Java and Python basics.",
     achievements: "Built multiple full-stack apps and a portfolio showcasing them.",
-    Goals: "Raksha aspires to become a Software Developer and build innovative, user-centric tech solutions by seamlessly integrating AI/ML into their core functionality.",
+    goals: "Raksha aspires to become a Software Developer and build innovative, user-centric tech solutions by seamlessly integrating AI/ML into their core functionality.",
     availability: "Currently exploring opportunities and open to collaborations.",
     zone: "Raksha works in IST (Indian Standard Time).",
     projects: "Raksha built QuickJot (note-taking app), To-Do List app, and small projects like calculator, tic-tac-toe, and weather app. 🚀 More projects are on the way!",
@@ -49,6 +49,21 @@ function RheaAssistant() {
     blog: "Raksha occasionally shares notes and insights on tech via twitter. (Blog page coming soon!)",
     source: "Raksha plans to contribute to open source projects soon!",
     open: "Raksha plans to contribute to open source projects soon!",
+    hire: "Raksha builds practical full-stack apps with real backend logic, has worked with large datasets during her AI research internship, and focuses on writing clean, scalable code. You can explore her projects or resume to see more.",
+    internship: "Raksha is currently looking for Software Development or Frontend/Full-Stack internship opportunities for Summer 2026. You can reach her via LinkedIn or email.",
+    why: "Raksha focuses on building real-world full-stack apps with backend APIs, databases, and automation pipelines rather than just UI projects.",
+    candidate: "Raksha is a motivated developer focused on backend and full-stack development with hands-on project experience.",
+    strength: "Raksha’s biggest strengths are consistency, practical problem-solving, and building complete working applications.",
+    job: "Raksha is open to internship and entry-level developer roles where she can work on backend systems, APIs, and real applications.",
+    opportunity: "Raksha is actively exploring software development internship opportunities.",
+    resume: "You can download Raksha’s resume directly from the homepage.",
+    download: "Raksha’s resume is available for download on the homepage.",
+    cv: "Raksha’s CV is available on the homepage.",
+    team: "Raksha enjoys collaborative environments and learning through real project work.",
+    work: "Raksha prefers hands-on project-based learning and building real applications.",
+    learning: "Raksha believes in learning by building practical systems rather than only studying theory.",
+    available: "Raksha is currently available for internships, collaborations, and developer opportunities.",
+    freelance: "Raksha is open to freelance or collaboration opportunities depending on the project.",
 
     contact: "You can contact Raksha via email: rakshasinha1908@gmail.com",
     email: "rakshasinha1908@gmail.com",
@@ -81,7 +96,7 @@ function RheaAssistant() {
 
     if (!reply)
       reply =
-        "I haven’t cracked that one yet 🤔 — but I can tell you all about Raksha’s skills, her latest projects, and how she’s blending code with creativity!";
+        "That’s a good question 🙂 I may not have that info yet, but I can help you explore Raksha’s projects, skills, experience, or contact details.";
 
     setMessages((prev) => [...prev, { sender: "rhea", text: reply }]);
     setInput("");
